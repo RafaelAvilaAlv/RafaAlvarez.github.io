@@ -60,22 +60,4 @@
     border-radius: 8px;
     margin-bottom: 10px;
   }
-
-
-  /* === CARRUSEL HORIZONTAL === */
-.project-images {
-  display: flex;
-  gap: 15px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  scroll-behavior: smooth;
-}
-
-.project-images img {
-  height: 180px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  flex-shrink: 0;
-}
-
 </style>
