@@ -327,25 +327,6 @@
 
   <!-- SCRIPT PARA ANIMACIONES -->
   <script>
-    const elements = document.querySelectorAll('.fade-up');
-
-    function showOnScroll() {
-      const trigger = window.innerHeight * 0.85;
-
-      elements.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-
-        if (top < trigger) {
-          el.classList.add('show');
-        }
-      });
-    }
-
-    window.addEventListener('scroll', showOnScroll);
-    window.onload = showOnScroll;
-  </script>
-
-  <script>
   // Animación scroll
   const elements = document.querySelectorAll('.fade-up');
   function showOnScroll() {
@@ -382,6 +363,8 @@
   }
 </script>
 
+
+  
 
 </body>
 
