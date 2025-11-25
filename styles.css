@@ -60,4 +60,21 @@
     border-radius: 8px;
     margin-bottom: 10px;
   }
+
+
+  .header-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4e7cff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 </style>
