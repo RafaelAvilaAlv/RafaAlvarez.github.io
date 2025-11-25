@@ -142,22 +142,13 @@
   <h2>Contacto</h2>
   <p>¿Quieres trabajar conmigo o tienes un proyecto?</p>
 
-  <!-- BOTONES RÁPIDOS -->
+  <!-- BOTÓN RÁPIDO DE WHATSAPP -->
   <div class="contact-buttons">
-
-    <!-- EMAIL -->
-    <a class="btn-cv" 
-       href="mailto:avilalvarezmiltonrafael@gmail.com?subject=Contacto%20desde%20tu%20portafolio">
-      Enviar Email
-    </a>
-
-    <!-- WHATSAPP -->
     <a class="btn-cv" 
        href="https://wa.me/593958635351" 
        target="_blank">
       WhatsApp
     </a>
-
   </div>
 
   <h3>O envía un mensaje directamente</h3>
@@ -168,15 +159,18 @@
         method="POST" 
         class="contact-form">
 
-    <input type="text" name="name" placeholder="Tu nombre" required>
-    <input type="email" name="email" placeholder="Tu correo" required>
-    <textarea name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+    <label for="name">Tu nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+    <label for="email">Tu correo:</label>
+    <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+    <label for="message">Tu mensaje:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Tu mensaje" required></textarea>
 
     <button class="btn-cv" type="submit">Enviar mensaje</button>
   </form>
-
 </section>
-
 
 
 
