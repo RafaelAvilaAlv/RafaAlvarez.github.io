@@ -5,19 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - Rafael Ávila</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <style>
     /* ============ ESTILOS GENERALES ============ */
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: #f5f6fa;
       color: #2d3436;
+      scroll-behavior: smooth;
     }
 
     h1, h2 {
       margin: 0;
       font-weight: 600;
+    }
+
+    /* ============ ANIMACIONES SCROLL ============ */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s ease;
+    }
+
+    .show {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     /* ============ NAVBAR SUPERIOR ============ */
@@ -50,18 +66,19 @@
 
     nav ul li a:hover {
       color: #dfe6f5;
+      letter-spacing: 1px;
     }
 
-    /* ============ HEADER PRINCIPAL ============ */
+    /* ============ HEADER HERO ============ */
     header {
       text-align: center;
-      padding: 60px 20px;
+      padding: 70px 20px;
       background: white;
       box-shadow: 0 2px 15px rgba(0,0,0,0.08);
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       color: #0d6efd;
     }
 
@@ -69,6 +86,23 @@
       font-size: 1.2rem;
       color: #636e72;
       margin-top: 10px;
+    }
+
+    .btn-cv {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #0d6efd;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .btn-cv:hover {
+      background: #0b5ed7;
+      transform: scale(1.05);
     }
 
     /* ============ SECCIONES GENERALES ============ */
@@ -88,52 +122,40 @@
       font-size: 1.8rem;
     }
 
-    /* ============ LISTAS ============ */
-    ul li {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-
     /* ============ TARJETAS DE PROYECTOS ============ */
     .project-card {
       background: #eef3ff;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 15px;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
       transition: 0.3s;
+      border-left: 6px solid #0d6efd;
     }
 
     .project-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0px 8px 20px rgba(0,0,0,0.10);
-    }
-
-    /* ============ BOTONES ============ */
-    .btn {
-      display: inline-block;
-      padding: 10px 18px;
-      background: #0d6efd;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 15px;
-      transition: 0.3s;
-      font-weight: 500;
-    }
-
-    .btn:hover {
-      background: #0b5ed7;
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.10);
     }
 
     /* ============ FOOTER ============ */
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       background: #0d6efd;
       color: white;
       margin-top: 40px;
     }
 
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
@@ -149,66 +171,78 @@
     </ul>
   </nav>
 
-  <!-- HEADER HERO -->
-  <header>
+  <!-- HEADER -->
+  <header class="fade-up">
     <h1>Hola, soy Rafael Ávila</h1>
     <p>Tecnólogo Superior Universitario en Desarrollo de Software</p>
+    <a class="btn-cv" href="#" download>Descargar CV</a>
   </header>
 
-  <!-- ABOUT ME -->
-  <section id="about">
+  <!-- ABOUT -->
+  <section id="about" class="fade-up">
     <h2>Sobre mí</h2>
     <p>
-      Soy Rafael Ávila, <strong>Tecnólogo Superior Universitario en Desarrollo de Software</strong>. 
-      Tengo experiencia en desarrollo web utilizando <strong>Angular</strong>, <strong>Java</strong>, 
-      <strong>Spring Boot</strong> y bases de datos <strong>SQL y NoSQL</strong>.
+      Soy Rafael Ávila, Tecnólogo Superior Universitario en Desarrollo de Software. 
+      Tengo experiencia en desarrollo web utilizando Angular, Java, Spring Boot y bases de datos SQL y NoSQL.
     </p>
     <p>
-      Disfruto crear aplicaciones modernas, seguras y escalables. También me apasiona 
-      enseñar informática y programación básica, ayudando a otros a iniciar en el mundo tech.
+      Disfruto crear aplicaciones modernas, seguras y escalables. 
+      También me apasiona enseñar informática y programación básica.
     </p>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
+  <section id="skills" class="fade-up">
     <h2>Skills y Competencias</h2>
     <ul>
-      <li><strong>Desarrollo web:</strong> Angular, HTML, CSS, TypeScript</li>
+      <li><strong>Frontend:</strong> Angular, HTML, CSS, TypeScript</li>
       <li><strong>Backend:</strong> Java, Spring Boot, APIs REST</li>
       <li><strong>Bases de datos:</strong> MySQL, MongoDB</li>
       <li><strong>Metodologías:</strong> Scrum, buenas prácticas, Git</li>
-      <li><strong>Despliegue:</strong> Azure, Render, GitHub Pages</li>
+      <li><strong>DevOps:</strong> Azure, Render, GitHub Pages</li>
     </ul>
   </section>
 
-  <!-- PROYECTOS -->
-  <section id="projects">
+  <!-- PROJECTS -->
+  <section id="projects" class="fade-up">
     <h2>Proyectos</h2>
 
-    <div class="project-card">
-      Sistema de Gestión de Residencias Estudiantiles (Angular + Spring Boot + MySQL)
-    </div>
-
-    <div class="project-card">
-      Chatbot con integración de API OpenAI (Backend Spring Boot)
-    </div>
-
-    <div class="project-card">
-      Aplicación CRUD desplegada en Azure App Service
-    </div>
+    <div class="project-card">Sistema de Gestión de Residencias (Angular + Spring Boot + MySQL)</div>
+    <div class="project-card">Chatbot con API OpenAI (Backend en Spring Boot)</div>
+    <div class="project-card">CRUD Web desplegado en Azure App Service</div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contact">
+  <!-- CONTACT -->
+  <section id="contact" class="fade-up">
     <h2>Contacto</h2>
     <p>¿Quieres trabajar conmigo o tienes un proyecto?</p>
-    <a class="btn" href="mailto:tu-correo@gmail.com">Enviar mensaje</a>
+    <a class="btn-cv" href="mailto:tu-correo@gmail.com">Enviar mensaje</a>
   </section>
 
   <!-- FOOTER -->
   <footer>
     © 2025 Rafael Ávila — Portafolio Profesional
+    <br><br>
+    <a href="#">GitHub</a> |
+    <a href="#">LinkedIn</a> |
+    <a href="#">Facebook</a>
   </footer>
+
+  <!-- SCRIPT PARA ANIMACIONES -->
+  <script>
+    const elements = document.querySelectorAll('.fade-up');
+    function showOnScroll() {
+      const trigger = window.innerHeight * 0.85;
+      elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < trigger) {
+          el.classList.add('show');
+        }
+      });
+    }
+    window.addEventListener('scroll', showOnScroll);
+    window.onload = showOnScroll;
+  </script>
 
 </body>
 </html>
