@@ -183,3 +183,111 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+
+
+/* ==== CONTACTO ==== */
+.contact-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-buttons .btn-cv {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdde1;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+.contact-form button {
+  cursor: pointer;
+}
+
+
+/* ==== CONTACTO ==== */
+.contact-buttons {
+  display: flex;
+  justify-content: center; /* Centrar botones */
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-buttons .btn-cv {
+  flex: none;
+  width: 200px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 12px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto; /* Centrar formulario */
+}
+
+.contact-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #0d6efd;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdde1;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+}
+
+.contact-form button {
+  cursor: pointer;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0b5ed7;
+  transform: scale(1.05);
+}
