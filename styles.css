@@ -1,4 +1,4 @@
-
+<style>
   /* Estilos generales */
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -9,7 +9,7 @@
     text-align: center;
   }
 
-  /* Header opcional si quieres agregarlo */
+  /* Header opcional */
   header {
     background: #1f2937;
     color: white;
@@ -30,7 +30,7 @@
     color: #0d6efd;
   }
 
-  /* Contenedor general de secciones */
+  /* Contenedor de secciones */
   section {
     margin: 40px auto;
     width: 90%;
@@ -60,3 +60,4 @@
     border-radius: 8px;
     margin-bottom: 10px;
   }
+</style>
