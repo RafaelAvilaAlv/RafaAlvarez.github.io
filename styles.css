@@ -249,3 +249,18 @@ footer a:hover {
   background: #0b5ed7;
   transform: scale(1.05);
 }
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 1.1rem;
+}
+
+.tech-icons span {
+  background: #eef3ff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border-left: 4px solid #0d6efd;
+  font-weight: 500;
+}
