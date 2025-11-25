@@ -178,7 +178,6 @@
   </style>
 </head>
 
-
 <body>
 
   <!-- NAVBAR -->
@@ -195,7 +194,7 @@
   <header class="fade-up">
     <h1>Hola, soy Rafael Ávila</h1>
     <p>Tecnólogo Superior Universitario en Desarrollo de Software</p>
-    <a class="btn-cv" href="HOJADEVIDA%20-.pdf" download>Descargar CV</a>
+    <a class="btn-cv" href="HOJADEVIDA-.pdf" download>Descargar CV</a>
   </header>
 
   <!-- ABOUT -->
@@ -224,42 +223,40 @@
   </section>
 
   <!-- PROJECTS -->
-  
-  <!-- PROJECTS -->
-<section id="projects" class="fade-up">
-  <h2>Proyectos</h2>
+  <section id="projects" class="fade-up">
+    <h2>Proyectos</h2>
 
-  <!-- PROYECTO PRINCIPAL -->
-  <div class="project-card">
-    <h3>Predicción Inteligente de Ranking Universitario (Spring Boot + IA + Docker + Nube)</h3>
+    <!-- PROYECTO PRINCIPAL -->
+    <div class="project-card">
+      <h3>Predicción Inteligente de Ranking Universitario (Spring Boot + IA + Docker + Nube)</h3>
 
-    <!-- GALERÍA DE IMÁGENES -->
-    <div class="project-images">
-      <img src="assets/img1.png" alt="Pantalla 1">
-      <img src="assets/img2.png" alt="Pantalla 2">
-      <img src="assets/img3.png" alt="Pantalla 3">
-      <img src="assets/img4.png" alt="Pantalla 4">
-      <img src="assets/img5.png" alt="Pantalla 5">
-      <img src="assets/img6.png" alt="Pantalla 6">
-      <img src="assets/img7.png" alt="Pantalla 7">
-      <img src="assets/img8.png" alt="Pantalla 8">
-      <img src="assets/img9.png" alt="Pantalla 9">
-      <img src="assets/img10.png" alt="Pantalla 10">
-      <img src="assets/img11.png" alt="Pantalla 11">
-      <img src="assets/img12.png" alt="Pantalla 12">
+      <!-- GALERÍA DE IMÁGENES -->
+      <div class="project-images">
+        <img src="assets/img1.png" alt="Pantalla 1">
+        <img src="assets/img2.png" alt="Pantalla 2">
+        <img src="assets/img3.png" alt="Pantalla 3">
+        <img src="assets/img4.png" alt="Pantalla 4">
+        <img src="assets/img5.png" alt="Pantalla 5">
+        <img src="assets/img6.png" alt="Pantalla 6">
+        <img src="assets/img7.png" alt="Pantalla 7">
+        <img src="assets/img8.png" alt="Pantalla 8">
+        <img src="assets/img9.png" alt="Pantalla 9">
+        <img src="assets/img10.png" alt="Pantalla 10">
+        <img src="assets/img11.png" alt="Pantalla 11">
+        <img src="assets/img12.png" alt="Pantalla 12">
+      </div>
+
+      <p>
+        Sistema inteligente que predice el puntaje global QS 2025 basado en regresión,
+        arquitectura limpia, JWT, Swagger y despliegue en nube con Docker.
+      </p>
     </div>
 
-    <p>
-      Sistema inteligente que predice el puntaje global QS 2025 basado en regresión,
-      arquitectura limpia, JWT, Swagger y despliegue en nube con Docker.
-    </p>
-  </div>
-
-  <div class="project-card">Sistema de Gestión de Residencias (Angular + Spring Boot + MySQL)</div>
-  <div class="project-card">Chatbot con API OpenAI (Spring Boot)</div>
-  <div class="project-card">CRUD Web desplegado en Azure App Service</div>
-</section>
-
+    <!-- OTROS PROYECTOS -->
+    <div class="project-card">Sistema de Gestión de Residencias (Angular + Spring Boot + MySQL)</div>
+    <div class="project-card">Chatbot con API OpenAI (Spring Boot)</div>
+    <div class="project-card">CRUD Web desplegado en Azure App Service</div>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="fade-up">
@@ -272,23 +269,27 @@
   <footer>
     © 2025 Rafael Ávila — Portafolio Profesional
     <br><br>
-    <a href="#">GitHub</a> |
-    <a href="#">LinkedIn</a> |
-    <a href="#">Facebook</a>
+    <a href="#" target="_blank">GitHub</a> |
+    <a href="#" target="_blank">LinkedIn</a> |
+    <a href="#" target="_blank">Facebook</a>
   </footer>
 
   <!-- SCRIPT PARA ANIMACIONES -->
   <script>
     const elements = document.querySelectorAll('.fade-up');
+
     function showOnScroll() {
       const trigger = window.innerHeight * 0.85;
+
       elements.forEach(el => {
         const top = el.getBoundingClientRect().top;
+
         if (top < trigger) {
           el.classList.add('show');
         }
       });
     }
+
     window.addEventListener('scroll', showOnScroll);
     window.onload = showOnScroll;
   </script>
