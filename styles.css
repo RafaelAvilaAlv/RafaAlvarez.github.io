@@ -62,23 +62,20 @@
   }
 
 
-  /* === GALERÍA DE IMÁGENES EN GRID === */
+  /* === CARRUSEL HORIZONTAL === */
 .project-images {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  display: flex;
   gap: 15px;
-  margin-top: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
 }
 
 .project-images img {
-  width: 100%;
+  height: 180px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: 0.3s;
-}
-
-.project-images img:hover {
-  transform: scale(1.03);
+  flex-shrink: 0;
 }
 
 </style>
