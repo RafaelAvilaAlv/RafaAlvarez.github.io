@@ -1,106 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - Rafael Ávila</title>
 
   <style>
+    /* ============ ESTILOS GENERALES ============ */
     body {
-      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
-      color: #222;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f6fa;
+      color: #2d3436;
     }
 
     h1, h2 {
-      color: #1a1a1a;
+      margin: 0;
+      font-weight: 600;
     }
 
-    h1 {
+    /* ============ NAVBAR SUPERIOR ============ */
+    nav {
+      width: 100%;
+      background: #0d6efd;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #dfe6f5;
+    }
+
+    /* ============ HEADER PRINCIPAL ============ */
+    header {
       text-align: center;
-      margin-top: 40px;
-      font-size: 2.5rem;
+      padding: 60px 20px;
+      background: white;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
     }
 
-    p strong {
+    header h1 {
+      font-size: 2.8rem;
       color: #0d6efd;
     }
 
+    header p {
+      font-size: 1.2rem;
+      color: #636e72;
+      margin-top: 10px;
+    }
+
+    /* ============ SECCIONES GENERALES ============ */
     section {
-      background: #fff;
-      width: 80%;
+      width: 85%;
       max-width: 900px;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0px 3px 15px rgba(0,0,0,0.08);
+      margin: 40px auto;
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.08);
     }
 
     section h2 {
-      margin-bottom: 10px;
       color: #0d6efd;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
     }
 
+    /* ============ LISTAS ============ */
     ul li {
-      margin-bottom: 8px;
-    }
-
-    #projects ul li {
-      background: #eef3ff;
-      padding: 10px;
-      border-radius: 8px;
       margin-bottom: 10px;
+      line-height: 1.6;
     }
-  </style>
 
+    /* ============ TARJETAS DE PROYECTOS ============ */
+    .project-card {
+      background: #eef3ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.10);
+    }
+
+    /* ============ BOTONES ============ */
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #0d6efd;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background: #0b5ed7;
+    }
+
+    /* ============ FOOTER ============ */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d6efd;
+      color: white;
+      margin-top: 40px;
+    }
+
+  </style>
 </head>
+
 <body>
 
-  <h1>Hola, soy Rafael Ávila</h1>
-  <p style="text-align:center;"><strong>Tecnólogo Superior Universitario en Desarrollo de Software</strong></p>
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
 
+  <!-- HEADER HERO -->
+  <header>
+    <h1>Hola, soy Rafael Ávila</h1>
+    <p>Tecnólogo Superior Universitario en Desarrollo de Software</p>
+  </header>
+
+  <!-- ABOUT ME -->
   <section id="about">
     <h2>Sobre mí</h2>
     <p>
       Soy Rafael Ávila, <strong>Tecnólogo Superior Universitario en Desarrollo de Software</strong>. 
-      Tengo experiencia desarrollando aplicaciones web utilizando 
-      <strong>Angular</strong>, <strong>Java</strong> y <strong>Spring Boot</strong>, 
-      aplicando principios de arquitectura, buenas prácticas y seguridad con JWT.
+      Tengo experiencia en desarrollo web utilizando <strong>Angular</strong>, <strong>Java</strong>, 
+      <strong>Spring Boot</strong> y bases de datos <strong>SQL y NoSQL</strong>.
     </p>
     <p>
-      Manejo bases de datos <strong>SQL (MySQL)</strong> y <strong>NoSQL (MongoDB)</strong>, 
-      diseño e implementación de APIs REST y desarrollo backend escalable.
-      También cuento con experiencia enseñando informática y programación básica, 
-      fomentando el pensamiento lógico y el aprendizaje práctico.
-    </p>
-    <p>
-      Me caracterizo por mi compromiso con la mejora continua, la innovación y 
-      el trabajo en equipo dentro del ámbito tecnológico.
+      Disfruto crear aplicaciones modernas, seguras y escalables. También me apasiona 
+      enseñar informática y programación básica, ayudando a otros a iniciar en el mundo tech.
     </p>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills">
-    <h2>Competencias</h2>
+    <h2>Skills y Competencias</h2>
     <ul>
-      <li><strong>Desarrollo de aplicaciones:</strong> Nivel Alto</li>
-      <li><strong>Metodologías Ágiles (Scrum):</strong> Nivel Alto</li>
-      <li><strong>Frontend (Angular):</strong> Nivel Alto</li>
-      <li><strong>Backend (Java - Spring Boot):</strong> Nivel Alto</li>
-      <li><strong>Bases de Datos SQL y NoSQL:</strong> Nivel Alto</li>
-      <li><strong>Despliegue de Aplicaciones:</strong> Nivel Alto</li>
+      <li><strong>Desarrollo web:</strong> Angular, HTML, CSS, TypeScript</li>
+      <li><strong>Backend:</strong> Java, Spring Boot, APIs REST</li>
+      <li><strong>Bases de datos:</strong> MySQL, MongoDB</li>
+      <li><strong>Metodologías:</strong> Scrum, buenas prácticas, Git</li>
+      <li><strong>Despliegue:</strong> Azure, Render, GitHub Pages</li>
     </ul>
   </section>
 
+  <!-- PROYECTOS -->
   <section id="projects">
     <h2>Proyectos</h2>
-    <ul>
-      <li>Sistema de Gestión de Residencias Estudiantiles (Angular + Spring Boot + MySQL)</li>
-      <li>Chatbot con integración de API OpenAI (Backend Spring Boot)</li>
-      <li>Aplicación CRUD desplegada en Azure App Service</li>
-    </ul>
+
+    <div class="project-card">
+      Sistema de Gestión de Residencias Estudiantiles (Angular + Spring Boot + MySQL)
+    </div>
+
+    <div class="project-card">
+      Chatbot con integración de API OpenAI (Backend Spring Boot)
+    </div>
+
+    <div class="project-card">
+      Aplicación CRUD desplegada en Azure App Service
+    </div>
   </section>
+
+  <!-- CONTACTO -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>¿Quieres trabajar conmigo o tienes un proyecto?</p>
+    <a class="btn" href="mailto:tu-correo@gmail.com">Enviar mensaje</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Rafael Ávila — Portafolio Profesional
+  </footer>
 
 </body>
 </html>
