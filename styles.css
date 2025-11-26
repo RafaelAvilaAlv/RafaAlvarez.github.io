@@ -33,29 +33,39 @@ body::after { right: -100px; top: 300px; }
    NAVBAR
    =========================== */
 
+   /* NAVBAR */
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 18px 0;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
+  left: 0;
+  background: rgba(10, 25, 47, 0.45); /* glassmorphism */
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
   z-index: 100;
 }
 
-nav a {
-  color: #ffffff;
-  font-weight: 500;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul li a {
+  color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
   transition: 0.3s ease;
 }
 
-nav a:hover {
-  color: #dceaff;
+nav ul li a:hover {
+  color: #4da8ff;
 }
+
 
 /* ===========================
    HEADER HERO
