@@ -4704,5 +4704,28 @@ input, select, textarea {
 }
 
 
+#header .profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+
+  margin: 0;
+
+  opacity: 0;
+  transform: translateY(10px);
+  animation: profileFade 1.2s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes profileFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
