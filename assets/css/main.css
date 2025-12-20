@@ -4694,9 +4694,13 @@ input, select, textarea {
 
 
 .profile-img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  margin-bottom: 15px;
 }
+
 
