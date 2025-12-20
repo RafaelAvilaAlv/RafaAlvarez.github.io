@@ -4693,13 +4693,10 @@ input, select, textarea {
 	}
 
 
-	.profile-img {
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	object-fit: cover;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 1rem;
-	border: 2px solid rgba(255,255,255,0.5);
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
 }
+
